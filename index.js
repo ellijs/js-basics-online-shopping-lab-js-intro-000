@@ -41,7 +41,7 @@ function viewCart() {
 }
 
 function total() {
-      let total = cart.reduce((accumulator, currentValue) => accumulator + currentValue.itemPrice, initialValue)
+      let total = cart.reduce((accumulator, currentValue) => accumulator + currentValue.itemPrice, 0)
       return "Your total is \$ ${total}.";
 }
 
