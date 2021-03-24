@@ -43,7 +43,7 @@ function viewCart() {
 function total() {
 //      let total = cart.reduce((accumulator, currentValue) => accumulator + currentValue.itemPrice, initialValue)
 //      return "Your total is \$ ${total}.";
-  let total = cart.reduce((accumulator, currentValue) => {return accumulator + currentValue.cart.itemPrice}, 0);
+  let total = cart.reduce((accumulator, currentValue) => {return accumulator + currentValue.itemPrice}, 0);
 }
 
 function removeFromCart(item) {
