@@ -30,7 +30,7 @@ function viewCart() {
   } else {
       let string = "In your cart, you have "
       for (let i = 0; i < cart.length; i++) {
-      string += `${i === cart.length -1 ? "and" : ""}${cart[i].itemName} at \$${cart[i].itemPrice}${i === cart.length -1 ? "." : ","}`
+      string += `${i === cart.length -1 ? "and" : ""}${cart[i].itemName} at \$${cart[i].itemPrice}${i === cart.length -1 ? "." : ", "}`
       }
       return string;
     }
