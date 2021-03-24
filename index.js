@@ -53,7 +53,6 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  total();
   cart.splice(0, cart.length);
-  return `Your cost is \$${total}, which will be charged to the card ${cardNumber}.`
+  return `Your cost is \$${total()}, which will be charged to the card ${cardNumber}.`
 }
