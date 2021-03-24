@@ -10,13 +10,14 @@ function setCart(c) {
 }
 
 function addToCart(item) {
+  console.log("I'm here", item)
   function getPrice(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max + min) - min);
   }
   let price = getPrice(1, 100);
-  Object.assign({}, cart, {itemName: "name", itemPrice: price});
+  Object.assign({}, cart, {itemName: item, itemPrice: price});
   cart.push(item);
   return `${cart[itemName]} has been added to your cart.`
 }
